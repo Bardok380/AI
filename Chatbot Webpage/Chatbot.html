@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Chatbot.css">
+  <title>World's Most Popular Flowers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #4CAF50;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2em;
+      border-bottom: 1px solid #ccc;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 1em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    input, textarea {
+      margin-bottom: 1em;
+      padding: 0.5em;
+      font-size: 1em;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#roses">ROSES</a>
+    <a href="#tulips">TULIPS</a>
+    <a href="#lilies">LILIES</a>
+    <a href="#sunflowers">SUNFLOWERS</a>
+    <a href="#orchids">ORCHIDS</a>
+    <a href="#about">ABOUT US</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to the World of Flowers</h1>
+    <p>Explore the beauty and history of the five most beloved flowers across the globe.</p>
+  </section>
+
+  <section id="roses">
+    <h2>Roses</h2>
+    <p>Roses are among the most recognizable and cherished flowers in the world. Known for their layered petals and enchanting fragrance, roses come in a wide range of colors, each symbolizing a different sentiment. Red roses are synonymous with love, while yellow roses represent friendship and joy.</p>
+    <p>Historically, roses have been cultivated for over 5,000 years, with origins tracing back to ancient civilizations such as those in Persia and China. They have been used in everything from medicinal applications to royal emblems, making them a symbol of power, love, and beauty through the ages.</p>
+    <img src="Images/Rose.jpg" loading="lazy" alt="Red Rose">
+  </section>
+
+  <section id="tulips">
+    <h2>Tulips</h2>
+    <p>Tulips are known for their simple, elegant shape and vibrant colors. They bloom in spring and are often associated with renewal and the beginning of a new season. Their smooth petals and bright hues make them a popular choice for gardens and floral arrangements worldwide.</p>
+    <p>Tulips originated in Central Asia and were later cultivated extensively in the Ottoman Empire. In the 17th century, they became the center of "Tulip Mania" in the Netherlands, a period of intense economic speculation. This history makes tulips not only beautiful but also culturally significant.</p>
+    <img src="Images/Tulips.jpg" loading="lazy" alt="Tulips">
+  </section>
+
+  <section id="lilies">
+    <h2>Lilies</h2>
+    <p>Lilies are elegant and fragrant flowers that symbolize purity and refined beauty. They are commonly used in weddings and religious ceremonies due to their classic white petals, though they also come in pink, orange, and yellow varieties. Their trumpet-shaped blooms make them stand out in any bouquet.</p>
+    <p>Historically, lilies have held symbolic meanings in ancient Greek and Roman cultures, often associated with goddesses and the divine. Their image has been found in ancient art and mythology, solidifying their status as timeless symbols of purity and grace.</p>
+    <img src="Images/Lilies.jpg" loading="lazy" alt="White Lily">
+  </section>
+
+  <section id="sunflowers">
+    <h2>Sunflowers</h2>
+    <p>Sunflowers are cheerful and bright flowers known for their large heads and yellow petals. They follow the sun’s movement throughout the day, a behavior known as heliotropism. Their seeds are not only edible but also used to produce sunflower oil.</p>
+    <p>Native to the Americas, sunflowers were cultivated by Indigenous peoples long before European contact. They became a symbol of the sun and harvest and have been widely grown around the world for their beauty and utility.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg" loading="lazy" alt="Sunflower">
+  </section>
+
+  <section id="orchids">
+    <h2>Orchids</h2>
+    <p>Orchids are exotic flowers that come in a variety of shapes and colors, prized for their symmetry and intricate beauty. They are popular in both home gardening and high-end floral arrangements, symbolizing luxury and elegance.</p>
+    <p>Orchids have a long history of cultivation, particularly in Asia where they were used in traditional medicine and symbolism. With over 25,000 species, orchids are one of the largest families of flowering plants, representing adaptability and beauty.</p>
+    <img src="Images/Orchids.jpg" loading="lazy" alt="Orchid">
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are PetalPulse, a passionate team of flower enthusiasts dedicated to exploring and sharing the beauty of the world’s most beloved blooms. Our mission is to connect people to the rich history and diverse expressions of flowers, from romantic roses to the cheerful sunflower.</p>
+    <p>Founded in 2022, PetalPulse curates content and experiences that celebrate flowers’ cultural significance and timeless charm. Whether you’re a budding gardener or a floral history buff, we provide insights and resources to deepen your love for nature’s most vibrant creations.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+<div id="lightbox"><img src="" alt="Enlarged flower image"></div>
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+<script src="Chatbot.js"></script>
+</body>
+</html>

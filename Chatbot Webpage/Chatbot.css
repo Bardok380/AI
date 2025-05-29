@@ -1,0 +1,180 @@
+/* Reset defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: #2c2c2c;
+  line-height: 1.6;
+  background-color: #fff8f4;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+nav {
+  background-color: #ffb6b9;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #880e4f;
+}
+
+section {
+  padding: 3em 5%;
+  border-bottom: 1px solid #eee;
+  background-color: #fffefc;
+}
+
+section:nth-child(even) {
+  background-color: #fef0f5;
+}
+
+section h2 {
+  color: #d81b60;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 1.5em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  display: block;
+}
+
+img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 2em;
+}
+
+input, textarea {
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="submit"] {
+  background-color: #f06292;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #c2185b;
+}
+
+#home h1 {
+  font-size: 2.5em;
+  color: #ad1457;
+  margin-bottom: 0.5em;
+}
+
+/* Lightbox styles */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+#lightbox.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Scroll to top button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  padding: 0.75em 1em;
+  font-size: 1.2em;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1500;
+  transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #ad1457;
+}
+
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  section {
+    padding: 2em 10%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
